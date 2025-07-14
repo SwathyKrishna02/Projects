@@ -19,7 +19,6 @@ A web-based application developed to streamline class committee operations in co
 - [🚀 Deployment](#-deployment)
 - [📄 License](#-license)
 - [🧠 Topics](#-topics)
-- [👩‍💻 Authors](#-authors)
 
 ---
 
@@ -197,9 +196,6 @@ See the [LICENSE](./LICENSE) file for more information.
 `student-portal` `bca-major-project` `minor-project` `management-system` `ccms`
 
 ---
-
-## 👩‍💻 Authors
-
 **This system was developed as part of a group BCA Major Project (2023–24).**
 ---
 
