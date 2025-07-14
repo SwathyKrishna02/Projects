@@ -1,230 +1,161 @@
-# 🧑‍🏫 Class Committee Management System (CCMS)
+# 🏫 Class Committee Management System (CCMS)
 
-A web-based application developed to streamline class committee operations in college departments. It automates scheduling, attendance tracking, report submissions, and student performance evaluations, providing a centralized platform for HODs, Class Committee Chairs (CC-Chairs), Faculty, and Student Representatives.
-
----
-
-## 📌 Table of Contents
-- [📚 Introduction](#-introduction)
-- [🚀 Features](#-features)
-- [🧩 Modules](#-modules)
-- [🧑‍💻 System Roles](#-system-roles)
-- [🛠️ Technologies Used](#-technologies-used)
-- [📐 Data Flow Diagrams](#-data-flow-diagrams)
-- [🎯 Use Case Diagram](#-use-case-diagram)
-- [🧭 Process Workflow](#-process-workflow)
-- [📸 Screenshots](#-screenshots)
-- [🖥️ Requirements](#-requirements)
-- [📄 License](#-license)
-- [🧠 Topics](#-topics)
-- [👩‍💻 Authors](#-authors)
+A web-based system designed to efficiently manage class committee operations in a college environment. The system automates meeting schedules, manages academic documents, facilitates communication between faculty and students, and generates graphical performance reports — enabling HODs, Class Committee Chairs, faculty members, and student representatives to collaborate on a unified platform.
 
 ---
 
 ## 📚 Introduction
 
-The Class Committee Management System (CCMS) enables role-based management of class committee tasks, bringing transparency, efficiency, and automation into the academic workflow.
+The **Class Committee Management System** supports streamlined, semester-wise academic supervision. The HOD serves as the system admin, assigning Class Committee Chairs (CC-Chairs) to each batch. CC-Chairs then manage their respective groups, including course instructors, non-instructing faculty, and student representatives. The system simplifies the flow of document uploads, meeting coordination, and performance evaluations.
 
-### 🗓️ Meeting Structure (Per Semester):
-- **Zeroth Meeting** – Upload Course Plan & Evaluation Policy
-- **First Meeting** – General Discussion
-- **Midterm Meeting** – Submit Excel-based Midterm Marksheets
-- **Internal Finalization** – Upload updated marks and reports
-- **Grade Finalization** – Submit & generate final grade reports
-
-🔔 Features like **automated email reminders**, **file parsing**, **graphical analytics**, and **versioned uploads** help ensure timely and accurate academic operations.
+### 🗓️ Semester-wise Meeting Structure:
+- **Zeroth Meeting** – Upload course plan & evaluation policy
+- **First Meeting** – General academic review
+- **Midterm Meeting** – Upload Excel mark sheets → Graphical analysis
+- **Internal Finalization Meeting** – Upload updated mark sheets
+- **Grade Finalization Meeting** – Upload Excel to generate grade reports
 
 ---
 
-## 🚀 Features
+## 🧩 Problem Statement
 
-- ✅ Role-based Access Control (HOD, CC-Chair, Faculty, Student)
-- ✅ Automated Email Reminders (12 hours before submission deadlines)
-- ✅ Secure File Uploads (.xlsx, .pdf)
-- ✅ Graph Generation from Excel Sheets (Min, Max, Avg, Outliers)
-- ✅ Version Control for Files
-- ✅ Live Meeting Tracking and History
-- ✅ Class-wise and Course-wise Folder Management
-- ✅ Real-time Document Status Checks by CC-Chair
+Managing academic documents and committee meetings across multiple batches can become tedious without a systemized approach. This project provides a centralized file structure (Department > Batch > Group > Course > Faculty > File) and a role-based workflow. It ensures:
+
+- Timely submission of course documents
+- Automated and manual file reminders
+- Organized meeting scheduling and attendance tracking
+- Generation of analytical reports from uploaded Excel mark sheets
 
 ---
 
-## 🧩 Modules
+## 🧑‍💻 User Roles & Functionalities
 
-| Module | Description |
-|--------|-------------|
-| 🏛️ **HOD Dashboard** | Assign CC-Chairs, manage faculty and batches |
-| 🧑‍🏫 **CC-Chair Panel** | Schedule meetings, send reminders, track uploads |
-| 👨‍🎓 **Faculty Portal** | Upload course plans, marksheets, attendance reports |
-| 👩‍🎓 **Student Panel** | View meeting minutes and performance summaries |
-| 📊 **Graph Generator** | Convert Excel marksheets to analytical visuals |
-| 🗂️ **File System** | Department → Batch → Group → Course → Files |
+### 👤 Head of Department (HOD)
+- Add batches and faculty members
+- Assign CC-Chairs to batches
+- Oversee meeting summaries and uploaded files
 
----
-
-## 🧑‍💻 System Roles
-
-### 👤 HOD (Admin)
-- Add Batches & Faculty
-- Assign Class Committee Chairs
-- View Meeting & Upload Reports
-
-### 👩‍💼 Class Committee Chair
-- Schedule Meetings
-- Add Faculty & Student Reps
-- Send Reminders
-- Track Submission Status
+### 👩‍💼 Class Committee Chair (CC-Chair)
+- Add group members (faculty, students)
+- Schedule meetings and send reminders
+- Manage document submissions and access
+- Track file status and control visibility
 
 ### 👨‍🏫 Faculty
-- Upload Course Plans & Exam Results
-- Submit Attendance & Grade Sheets
-- Participate in Meetings
+- Upload course plans, mark reports, and attendance
+- Attend class committee meetings
+- View graphs and performance summaries
 
-### 👩‍🎓 Student Representative
-- Attend Meetings
-- View Approved Reports (with permission)
+### 👩‍🎓 Student Representatives
+- Participate in class committee meetings
+- View approved reports and grade sheets (if permitted)
+
+---
+
+## ✨ Features
+
+- ✅ Role-based access (HOD, CC-Chair, Faculty, Student)
+- ✅ Excel Upload → Graph Generator (Min, Max, Avg, Outliers)
+- ✅ Secure file storage and version control
+- ✅ Automatic file reminders (12 hours before deadline)
+- ✅ Real-time file status checks
+- ✅ PDF uploads for evaluation policy and attendance
+- ✅ Dynamic meeting scheduling and history tracking
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Category       | Tech Stack         |
-|----------------|--------------------|
-| Frontend       | HTML, CSS, JavaScript |
-| Backend        | PHP                |
-| Database       | MySQL              |
-| File Processing| PHPExcel (.xlsx)   |
-| Tools          | XAMPP, GitHub      |
-| Hosting        | Localhost / Web Server |
+| Category         | Stack                    |
+|------------------|---------------------------|
+| **Frontend**     | HTML, CSS, JavaScript     |
+| **Backend**      | PHP                       |
+| **Database**     | MySQL                     |
+| **Tools**        | XAMPP, GitHub             |
+| **File Parsing** | PHPExcel (.xlsx support)  |
+| **Hosting**      | Localhost / Web Server    |
 
 ---
 
-## 📐 Data Flow Diagrams
+## 📐 System Architecture & Flow
 
-### 🔁 Level 0 – Overview DFD  
-![Level 0 DFD](./Images/DFD%20Level%200.png)
+### 🔁 Level 0 – DFD Overview  
+![DFD Level 0](./images/dfd_level_0.png)
 
-### 🔄 Level 1 – Detailed Process Flow  
-![Level 1 DFD](./Images/DFD%20Level%201.png)
-
----
-
-## 🎯 Use Case Diagram  
-Defines interactions between roles and system functionalities.
-
-![Use Case Diagram](./Images/Overview%20DFD.png)
-
-## 🧩 Modules
-
-| Module                | Description |
-|------------------------|-------------|
-| 🏛️ HOD Dashboard        | Assign CC-Chairs, add faculties, manage batches |
-| 🧑‍🏫 CC-Chair Panel     | Schedule meetings, send reminders, manage uploads |
-| 👨‍🎓 Faculty Portal     | Upload files (course plans, marks, attendance), respond to alerts |
-| 👩‍🎓 Student Panel      | View approved meeting notes, grade summaries |
-| 📊 Graph Generator      | Convert Excel mark sheets into visual reports |
-| 🗂️ File System Manager  | Department → Batch → Group → Course → Files |
+### 🔄 Level 1 – Detailed Flow  
+![DFD Level 1](./images/dfd_level_1.png)
 
 ---
 
-## 🧑‍💻 System Roles
+## 🧭 Use Case Diagram  
+![Use Case Diagram](./images/overview_usecase.png)
 
-### 👤 HOD (Admin)
-- Add batches and faculties  
-- Assign CC-Chairs  
-- View summary reports
-
-### 👩‍💼 CC-Chair
-- Manage class committee groups  
-- Schedule & monitor meetings  
-- Remind faculty for submissions
-
-### 👨‍🏫 Faculty
-- Upload PDFs & Excel files  
-- Submit grade and attendance reports  
-- View generated graphs and performance data
-
-### 👩‍🎓 Student Representative
-- Attend meetings  
-- View approved minutes and grades *(if access is granted)*
+Roles like HOD, CC-Chair, Faculty, and Students interact with various use cases such as login, upload, schedule, and attend meetings.
 
 ---
 
-## 🛠️ Technologies Used
+## 🔄 Process Workflow  
+![Process Workflow](./images/process_workflow.png)
 
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: PHP  
-- **Database**: MySQL  
-- **File Processing**: PHPExcel (.xlsx parsing)  
-- **Tools**: XAMPP, GitHub  
-- **Hosting**: Localhost or Web server
-
----
-
-## 📐 Data Flow Diagrams
-
-These diagrams illustrate how data flows between users and internal modules.
-
-### 🔁 Level 0 – Overview DFD  
-![Level 0 DFD](./Images/DFD%20Level%200.png)
-
-### 🔄 Level 1 – Detailed Process Flow  
-![Level 1 DFD](./Images/DFD%20Level%201.png)
-
-### 🧭 Process Workflow  
-![Process Workflow](./Images/Process%20Workflow.png)
+A step-by-step visual guide to understand how meetings and document flows are handled in the system.
 
 ---
 
 ## 📸 Screenshots
 
-### 🎓 Student Portal Interface  
-![Student Portal](./Images/Student%20Portal.png)
+### 🎓 Student Portal  
+![Student Portal](./images/student_portal.png)
 
 ### 📊 Graphical Mark Report  
-![Graph Report](./Images/Graph%20Report.png)
+![Graph Report](./images/graph_report.png)
 
-### 📝 Grade Sheet Examples  
-![Grade Sheet](./Images/Grade%20Sheet.png)  
-![Marksheet 1](./Images/Marksheet1.png)  
-![Marksheet 2](./Images/Marksheet2.png)
+### 📝 Grade Sheets  
+![Grade Sheet](./images/grade_sheet.png)  
+![Marksheet 1](./images/marksheet1.png)  
+![Marksheet 2](./images/marksheet2.png)
 
 ---
 
-## 🖥️ Requirements
+## 📋 Requirements
 
-### 🧪 Software
-- Modern browser (Chrome, Firefox)
-- Web server (XAMPP or Apache)
+### 🔧 Software:
 - PHP ≥ 7.x
 - MySQL
+- Browser: Chrome / Firefox
+- Web server: Apache (XAMPP recommended)
 
-### 🖱️ Hardware
-- Multi-core processor for smooth execution
-- Stable internet connection (for hosted version)
+### 🖥️ Hardware:
+- Multi-core processor
+- Reliable internet (for live hosting)
+
+---
+
+## 🚀 Deployment
+
+1. Clone the repo or download ZIP  
+2. Extract to `htdocs` (XAMPP)  
+3. Import `classcommitteedb.sql` in phpMyAdmin  
+4. Start Apache & MySQL  
+5. Access via: `http://localhost/Class-Committee-Management-System/`
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [Apache-2.0 License](LICENSE).
+This project is licensed under the **Apache-2.0 License**.
+
+---
+
+## 👥 Group Project
+
+This system was developed as part of the **BCA Major Project** for the academic year 2023–24.
 
 ---
 
 ## 🧠 Topics
 
-`php` `web-development` `front-end-development` `back-end-development`  
-`student-portal` `bca-major-project` `minor-project` `management-system` `ccms`
+`php` `web-development` `student-portal` `back-end-development` `management-system` `class-committee` `ccms` `bca-major-project`
 
 ---
 
-## 👩‍💻 Authors
-
-**👥 This is a Group Project developed as part of BCA Major Project work.**
-
-**Developed by:** Swathy Krishna  
-GitHub: [@SwathyKrishna02](https://github.com/SwathyKrishna02)
-
-> ⭐ If you found this project helpful or inspiring, please star 🌟 the repository and follow for more!
-
----
+⭐ If you found this project helpful or inspiring, please give it a ⭐ star and follow the repository!
