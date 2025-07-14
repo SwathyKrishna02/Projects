@@ -1,51 +1,118 @@
 # 🧑‍🏫 Class Committee Management System (CCMS)
 
-A web-based application built to streamline the management of class committee operations within a college department. This system automates class committee meeting schedules, report submissions, attendance tracking, and student performance evaluations — bringing faculty, student representatives, and department administrators under one platform.
+A web-based application developed to streamline class committee operations in college departments. It automates scheduling, attendance tracking, report submissions, and student performance evaluations, providing a centralized platform for HODs, Class Committee Chairs (CC-Chairs), Faculty, and Student Representatives.
 
 ---
 
 ## 📌 Table of Contents
-- 📚 [Introduction](#-introduction)
-- 🚀 [Features](#-features)
-- 🧩 [Modules](#-modules)
-- 🧑‍💻 [System Roles](#-system-roles)
-- 🛠️ [Technologies Used](#-technologies-used)
-- 📐 [Data Flow Diagrams](#-data-flow-diagrams)
-- 📸 [Screenshots](#-screenshots)
-- 🖥️ [Requirements](#-requirements)
-- 📄 [License](#-license)
-- 🧠 [Topics](#-topics)
-- 👩‍💻 [Authors](#-authors)
+- [📚 Introduction](#-introduction)
+- [🚀 Features](#-features)
+- [🧩 Modules](#-modules)
+- [🧑‍💻 System Roles](#-system-roles)
+- [🛠️ Technologies Used](#-technologies-used)
+- [📐 Data Flow Diagrams](#-data-flow-diagrams)
+- [🎯 Use Case Diagram](#-use-case-diagram)
+- [🧭 Process Workflow](#-process-workflow)
+- [📸 Screenshots](#-screenshots)
+- [🖥️ Requirements](#-requirements)
+- [📄 License](#-license)
+- [🧠 Topics](#-topics)
+- [👩‍💻 Authors](#-authors)
 
 ---
 
 ## 📚 Introduction
 
-The **Class Committee Management System (CCMS)** enables HODs, Class Committee Chairs (CC-Chairs), Faculties, and Student Representatives to manage their responsibilities in an organized and automated manner.
+The Class Committee Management System (CCMS) enables role-based management of class committee tasks, bringing transparency, efficiency, and automation into the academic workflow.
 
-Each semester includes five scheduled class committee meetings:
-- **Zeroth Meeting** – Course plan & evaluation policy upload
-- **First Meeting** – General review
-- **Midterm Meeting** – Excel mark upload, graph generation
-- **Internal Finalization** – Updated mark reports
-- **Grade Finalization** – Grade sheet upload & conversion
+### 🗓️ Meeting Structure (Per Semester):
+- **Zeroth Meeting** – Upload Course Plan & Evaluation Policy
+- **First Meeting** – General Discussion
+- **Midterm Meeting** – Submit Excel-based Midterm Marksheets
+- **Internal Finalization** – Upload updated marks and reports
+- **Grade Finalization** – Submit & generate final grade reports
 
-> 🔔 Built-in features include automated reminders, file uploads, Excel data parsing, and graphical mark analytics.
+🔔 Features like **automated email reminders**, **file parsing**, **graphical analytics**, and **versioned uploads** help ensure timely and accurate academic operations.
 
 ---
 
 ## 🚀 Features
 
-✅ Role-based access (HOD, CC-Chair, Faculty, Student)  
-✅ Class-wise and course-wise file structure  
-✅ Automated email reminders to faculty (12 hours before deadline)  
-✅ Excel upload → Graph generator → Min/Max/Avg/Outlier detection  
-✅ Document submission and status tracking  
-✅ Meeting scheduling with calendar views  
-✅ Graph-based mark reports and student performance analysis  
-✅ Secure data access control and file versioning
+- ✅ Role-based Access Control (HOD, CC-Chair, Faculty, Student)
+- ✅ Automated Email Reminders (12 hours before submission deadlines)
+- ✅ Secure File Uploads (.xlsx, .pdf)
+- ✅ Graph Generation from Excel Sheets (Min, Max, Avg, Outliers)
+- ✅ Version Control for Files
+- ✅ Live Meeting Tracking and History
+- ✅ Class-wise and Course-wise Folder Management
+- ✅ Real-time Document Status Checks by CC-Chair
 
 ---
+
+## 🧩 Modules
+
+| Module | Description |
+|--------|-------------|
+| 🏛️ **HOD Dashboard** | Assign CC-Chairs, manage faculty and batches |
+| 🧑‍🏫 **CC-Chair Panel** | Schedule meetings, send reminders, track uploads |
+| 👨‍🎓 **Faculty Portal** | Upload course plans, marksheets, attendance reports |
+| 👩‍🎓 **Student Panel** | View meeting minutes and performance summaries |
+| 📊 **Graph Generator** | Convert Excel marksheets to analytical visuals |
+| 🗂️ **File System** | Department → Batch → Group → Course → Files |
+
+---
+
+## 🧑‍💻 System Roles
+
+### 👤 HOD (Admin)
+- Add Batches & Faculty
+- Assign Class Committee Chairs
+- View Meeting & Upload Reports
+
+### 👩‍💼 Class Committee Chair
+- Schedule Meetings
+- Add Faculty & Student Reps
+- Send Reminders
+- Track Submission Status
+
+### 👨‍🏫 Faculty
+- Upload Course Plans & Exam Results
+- Submit Attendance & Grade Sheets
+- Participate in Meetings
+
+### 👩‍🎓 Student Representative
+- Attend Meetings
+- View Approved Reports (with permission)
+
+---
+
+## 🛠️ Technologies Used
+
+| Category       | Tech Stack         |
+|----------------|--------------------|
+| Frontend       | HTML, CSS, JavaScript |
+| Backend        | PHP                |
+| Database       | MySQL              |
+| File Processing| PHPExcel (.xlsx)   |
+| Tools          | XAMPP, GitHub      |
+| Hosting        | Localhost / Web Server |
+
+---
+
+## 📐 Data Flow Diagrams
+
+### 🔁 Level 0 – Overview DFD  
+![Level 0 DFD](./Images/DFD%20Level%200.png)
+
+### 🔄 Level 1 – Detailed Process Flow  
+![Level 1 DFD](./Images/DFD%20Level%201.png)
+
+---
+
+## 🎯 Use Case Diagram  
+Defines interactions between roles and system functionalities.
+
+![Use Case Diagram](./Images/Overview%20DFD.png)
 
 ## 🧩 Modules
 
@@ -153,9 +220,11 @@ This project is licensed under the [Apache-2.0 License](LICENSE).
 
 ## 👩‍💻 Authors
 
-Developed by: **Swathy Krishna**  
-GitHub: [@SWATHY-KRISHNA](https://github.com/SwathyKrishna)
+**👥 This is a Group Project developed as part of BCA Major Project work.**
+
+**Developed by:** Swathy Krishna  
+GitHub: [@SwathyKrishna02](https://github.com/SwathyKrishna02)
+
+> ⭐ If you found this project helpful or inspiring, please star 🌟 the repository and follow for more!
 
 ---
-
-⭐ *If you find this project helpful or inspiring, give it a ⭐ star and consider following the repository!*
