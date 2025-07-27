@@ -1,32 +1,60 @@
-# 🤖 AI-Powered Smart Notes App
+# 📱 Smart Notes App
 
-The **AI-Powered Smart Notes App** is a mobile application designed to help users take smarter, faster, and more organized notes with the help of AI. The app includes advanced features like AI summarization, voice input, and smart search to enhance productivity.
-
----
-
-## 📱 Key Features
-
-- 📝 Create, edit, and delete personal notes
-- 🔍 Smart search using keyword filters
-- 🧠 AI-based note summarization or rewriting
-- 🗣️ Voice-to-text note input using speech APIs
-- 📂 Categorize and manage notes by topic or tag
-- 🌗 Dark and light mode options
+A simple and lightweight Android Notes application that allows users to **add, edit, delete, and update** personal notes. The app includes a front **home page** and a **notes display page** where all saved notes can be viewed and managed easily. This project was developed using **Java**, **XML**, and **Room (SQLite)** in **Android Studio**.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Built With
 
-- **Platform**: Android (developed using Java / Kotlin / React Native)
-- **AI Features**: Integrated with OpenAI API or NLP libraries (like spaCy / Hugging Face / TensorFlow Lite)
-- **UI Design**: Material Design Principles
-- **Database**: SQLite / Room Database / AsyncStorage (based on platform)
-- **Tools Used**: Android Studio / Visual Studio Code / Emulator / GitHub
+- **Java** – For application logic  
+- **XML** – For designing UI with Material Design components  
+- **SQLite / Room** – For local database and note persistence  
+- **Android Studio** – IDE used for development  
+- **Git & GitHub** – Version control and repository hosting  
 
 ---
 
-## 🚀 How to Run the App
+## ✨ Features
 
-1. Clone the repository:
+- ➕ Add new notes  
+- 🖊️ Edit existing notes  
+- ❌ Delete notes  
+- ♻️ Update saved notes  
+- 🏠 Home page (welcome screen)  
+- 📄 Notes display page with full list  
+- 💾 Offline local storage using Room  
+
+---
+
+## 📸 App Screens Overview
+
+### 🏠 Home Page
+- Entry screen with basic navigation
+- Clean layout showing app name/logo
+
+### 📋 Notes Display Page
+- List view of saved notes
+- Includes edit and delete buttons for each note
+
+### ✍️ Add/Edit Note Page
+- Text fields for note title and content
+- Save and update buttons
+
+---
+
+## ▶️ How to Run
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/SwathyKrishna02/Projects.git
+   cd Projects/Mobile-Application-Development
+
+---
+
+## 🧪 Future Enhancements
+
+- 🎤 Voice-to-text feature for note input
+- 🔔 Add reminders and notifications
+- 🔐 Implement biometric or PIN lock
+- ☁️ Cloud sync using Firebase
+- 🏷️ Tagging and filtering notes by category
